@@ -1,0 +1,33 @@
+WORK COMPLETION ACT (SYNTHETIC EXAMPLE)
+
+Object ID:      OBJ-2026-0142
+Milestone:      M03 - Pipeline section replaced and pressure tested
+Document type:  Work completion act
+Version:        2
+Issued:         2026-08-19
+
+SCOPE OF WORK
+
+1. Dismantling of the worn heating pipeline section, 42 running metres.
+2. Installation of a new steel pipeline section, DN100, with insulation.
+3. Welding of 14 butt joints, visual and measuring inspection of each joint.
+4. Hydraulic pressure test at 1.25 of the working pressure, held 10 minutes.
+5. Restoration of the thermal insulation and protective casing.
+
+CONDITIONS RECORDED ON SITE
+
+- Work performed in a restricted facility, access by permit only.
+- Two planned shutdowns of the heating circuit, 4 hours each.
+- Buried utilities within the trench corridor located before excavation.
+
+RESULT
+
+The work listed above is completed in full. The pressure test showed no drop
+below the acceptance threshold. The section is ready for the acceptance
+procedure and for inclusion in the as-built documentation package.
+
+--
+This is a synthetic document created for a technical demonstration of the
+ProObject XRPL proof module. It describes no real object, no real party and
+no real transaction. Its only purpose is to serve as a stable set of bytes
+whose SHA-256 fingerprint can be recorded and later re-verified.

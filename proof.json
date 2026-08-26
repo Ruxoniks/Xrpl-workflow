@@ -1,0 +1,17 @@
+{
+  "txHash": "31A2004D7A08F4D6A7F875522A2E54C0C4E6C43232BF4ECAC8410A94AE73248F",
+  "explorer": "https://testnet.xrpl.org/transactions/31A2004D7A08F4D6A7F875522A2E54C0C4E6C43232BF4ECAC8410A94AE73248F",
+  "network": "xrpl-testnet",
+  "endpoint": "wss://s.altnet.rippletest.net:51233/",
+  "account": "rGuZMhLdFrjxhMbHbWfJkkpEBze1Co2WMC",
+  "document": "examples/sample-document.txt",
+  "event": {
+    "objectId": "OBJ-2026-0142",
+    "milestoneId": "M03",
+    "status": "completed",
+    "documentHash": "c9e00155ec01d175070ab97b7c06ab10e6cb93c6ebc201bdc861f2d461b1d691",
+    "version": 2,
+    "timestamp": "2026-08-19T14:38:59.873Z"
+  },
+  "recordedAt": "2026-08-19T14:39:15.533Z"
+}

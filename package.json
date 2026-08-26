@@ -1,0 +1,20 @@
+{
+  "name": "proobject-xrpl-proof-module",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Public-safe proof module: records a synthetic construction document fingerprint and milestone status on XRPL Testnet.",
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test",
+    "fingerprint": "node src/hash.js examples/sample-document.txt",
+    "record": "node src/record.js",
+    "verify": "node src/verify.js"
+  },
+  "license": "UNLICENSED",
+  "dependencies": {
+    "xrpl": "^4.4.0"
+  }
+}

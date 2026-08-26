@@ -1,0 +1,30 @@
+{
+  "objectId": "OBJ-2026-0142",
+  "objectType": "industrial-building",
+  "sourceDataType": "defect-report",
+  "workType": "heating-network-section-replacement",
+  "status": "in-progress",
+  "milestones": [
+    {
+      "milestoneId": "M01",
+      "title": "Site survey and source data collected",
+      "status": "completed"
+    },
+    {
+      "milestoneId": "M02",
+      "title": "Materials delivered to site",
+      "status": "completed"
+    },
+    {
+      "milestoneId": "M03",
+      "title": "Pipeline section replaced and pressure tested",
+      "status": "completed"
+    },
+    {
+      "milestoneId": "M04",
+      "title": "As-built documentation handed over",
+      "status": "pending"
+    }
+  ],
+  "_note": "Synthetic example. No real object, customer, contractor, address or amount is represented here."
+}
