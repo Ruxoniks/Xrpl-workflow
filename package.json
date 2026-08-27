@@ -5,7 +5,7 @@
   "description": "Public-safe proof module: records a synthetic construction document fingerprint and milestone status on XRPL Testnet.",
   "type": "module",
   "engines": {
-    "node": ">=18"
+    "node": ">=20.11.0"
   },
   "scripts": {
     "test": "node --test",

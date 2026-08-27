@@ -31,7 +31,7 @@ independently.
 
 ## Requirements
 
-- Node.js 18 or later (developed on 24)
+- Node.js 20.11 or later (developed on 24; CI covers 20, 22 and 24)
 - Network access to XRPL Testnet
 
 No account, no funding and no key material are needed: the Testnet faucet issues
