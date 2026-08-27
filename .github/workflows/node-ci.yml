@@ -1,0 +1,54 @@
+name: node-ci
+
+on:
+  push:
+    branches: [main]
+    tags: ['v*']
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    name: tests / node ${{ matrix.node }}
+    runs-on: ubuntu-latest
+
+    strategy:
+      fail-fast: false
+      matrix:
+        node: ['20', '22', '24']
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node }}
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      # The suite is offline by design: nothing here reaches XRPL Testnet, so a
+      # network outage can never turn this run red.
+      - name: Run tests
+        run: npm test
+
+  guard:
+    name: no secrets tracked
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fail if secret-like files are tracked
+        run: |
+          matches=$(git ls-files | grep -E '(^|/)\.env$|\.pem$|\.key$|\.p12$|(^|/)id_rsa' || true)
+          if [ -n "$matches" ]; then
+            echo "These files must never be committed:"
+            echo "$matches"
+            exit 1
+          fi
+          echo "No secret-like files are tracked."
